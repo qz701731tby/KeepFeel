@@ -9,19 +9,19 @@
 	    <td rowspan=4>1st week</td>
 	    <td rowspan=4>Finding mainstream method on design the application</td>
 		<td>research and study on WeChat developer tool</td>
-	    <td> </td>
+	    <td> finished </td>
 	</tr>
 	<tr>
 	    <td>research on Python database library pymysql</td>
-	    <td> </td>
+	    <td> finished </td>
 	</tr>
 	<tr>
 	    <td>research on Python web application framework Flask</td>
-	    <td> </td>
+	    <td> finished </td>
 	</tr>
 	<tr>
 	    <td>research on Python spider method</td>
-	    <td> </td>
+	    <td> finished </td>
 	</tr>
 	<tr>
 		<td rowspan=5>2nd week</td>
