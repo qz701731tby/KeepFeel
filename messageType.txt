@@ -1,0 +1,42 @@
+1.用户进入界面，设置用户信息（分配唯一且不变的userId）
+2.用户修改个人信息
+3.用户输入关键词，搜索场地信息
+4.用户点击场地，查看场地具体信息
+5.用户点击其他用户，查看其他用户的具体信息
+6.用户选择匹配信息，并点击匹配按钮
+
+Message中包含哪些信息？
+0.mark
+1.userId
+2.nickname
+3.gender
+4.description
+5.photo
+6.site query word
+7.location_lat
+8.location_lng
+9.match info: 1)sport type 2)site 3)start time 4)end time
+10.selected userId
+
+用户、场地的实例在哪创建？
+
+
+有匹配关系的场地才会被写入数据库
+
+1、三张表设计好
+person、site、match
+
+question：
+1）微信id还是新分配一个id
+前段区分第一次注册还是后端区分
+
+2）先去site_info中查询场地Id，在match_info中搜索匹配项？
+
+4）先进行数据库的查询，再百度api 
+？？？（排序：对api的结果重新排序）
+site_info这个数据库存在的意义
+
+userId, nickname, gender
+
+
+
