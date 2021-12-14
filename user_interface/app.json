@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/me/me",
+    "pages/ground/ground",
+    "pages/match_result/match_result",
+    "pages/refresh/refresh",
+    "pages/others/others"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "KeepFeel",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "backgroundColor": "#87CEEB"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#87CEEB",
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/ground/ground",
+        "iconPath": "image/ground1.jpg",
+        "selectedIconPath": "image/ground2.jpg",
+        "text": "场地信息"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/home1.jpg",
+        "selectedIconPath": "image/home2.jpg",
+        "text": "运动匹配"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "image/me1.jpg",
+        "selectedIconPath": "image/me2.jpg",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json",
+  "permission":{
+    "scope.userLocation":{
+      "desc": "请点击确定"
+    }
+  }
+}

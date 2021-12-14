@@ -1,0 +1,81 @@
+/* pages/me/me.wxss */
+.avatar {
+  height: 250rpx;
+  width: 250rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  border-radius: 50%
+}
+
+.person-info {
+  margin-top: -240rpx;
+  margin-left: 320rpx;
+  font-size: 15px;
+}
+
+.NickName {
+  margin-top: -50rpx;
+  margin-left: 100rpx;
+  font-size: 13px;
+  display: block;
+  height: 50rpx;
+  width: 310rpx;
+  border-radius: 6px;
+  background-color: rgb(226, 226, 226);
+  margin-bottom: 8rpx;
+}
+
+.wechatnum {
+  margin-top: -50rpx;
+  margin-left: 130rpx;
+  font-size: 13px;
+  display: block;
+  height: 50rpx;
+  width: 280rpx;
+  border-radius: 6px;
+  background-color: rgb(226, 226, 226);
+  margin-bottom: 8rpx;
+}
+
+.text {
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.section {
+  margin-top: 100rpx;
+  margin-left: 30rpx;
+}
+
+.hint {
+  font-size: 15px;
+}
+
+.imgblock {
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+
+.added-image {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 25%;
+}
+
+.self-intro {
+  margin-left: 30rpx;
+  display: block;
+  /* height: 100rpx; */
+  border-radius: 6px;
+  /* background-color: rgb(226, 226, 226); */
+}
+
+.button-area {
+  display: flex;
+  margin-top: 50rpx;
+}
+
+.button {
+  width: 250rpx;
+}

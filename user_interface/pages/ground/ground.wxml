@@ -1,0 +1,17 @@
+<!--pages/ground/ground.wxml-->
+<view class='search'>
+  <input class='search-input' bindinput="bindKeyInput" placeholder="请输入场地信息" auto-focus />
+  <image class="search-button" bindtap='search_location' src="/image/SearchButton.jpg" mode="aspectFit" />
+</view>
+<view class="scroll">
+  <view class='result'>{{resultnumber}}</view>
+  <view class='total_result' wx:for="{{location_data}}" wx:key="key">
+    <view class='result_start'>
+      <button class="button" bindtap="BindTap" data-total="{{item.name}}">
+        <view>{{item.name}}</view>
+        <view>{{item.location}}</view>
+        <view>当前该场地有{{item.personNum}}人</view>
+      </button>
+    </view>
+  </view>
+</view>

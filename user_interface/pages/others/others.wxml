@@ -1,0 +1,27 @@
+<!--pages/me/me.wxml-->
+<image src='{{avatarUrl}}' class="avatar"/>
+<view class="person-info">
+  <text class="text">微信号：{{target_user_info.wechatId}}</text>
+  <text class="text">昵称：{{target_user_info.nickname}}</text>
+  <text wx:if="{{target_user_info.gender==0}}" class="text">性别：隐藏</text>
+  <text wx:if="{{target_user_info.gender==1}}" class="text">性别：男</text>
+  <text wx:if="{{target_user_info.gender==2}}" class="text">性别：女</text>
+  <!-- <text class="text">城市：{{userInfo.city}}</text> -->
+</view>
+<view class="section">
+  <text class="hint">Ta的照片墙：</text>
+  <scroll-view scroll-x style="width:100%; white-space: nowrap;">
+    <view class="imgblock">
+      <block wx:for="{{photo}}" wx:for-item="image" wx:key="key">
+        <image class="added-image" src="{{image}}" data-src="{{image}}" bindtap="ImgPreview" mode="aspectFill"/>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+<view class="section">
+  <text class="hint">简介：</text>
+  <text class="self-intro">{{target_user_info.intro}}</text>
+</view>
+<view class="button-area">
+  <button class="button" bindtap="send_add_friend_message">发送好友请求</button>
+</view>

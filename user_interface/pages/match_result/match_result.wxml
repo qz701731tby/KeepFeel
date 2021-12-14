@@ -1,0 +1,27 @@
+<!--pages/match_result/match_result.wxml-->
+<view class='title'>
+  <text>您的匹配结果</text>
+  <!-- <button bindtap='jump'>跳转</button> -->
+</view>
+<view class="title">
+  <text wx:if = "{{empty == 1}}">抱歉，当前没有匹配用户</text>
+</view>
+<view wx:for="{{result}}" wx:key="key" class='total-result' style="flex-direction:column;">
+  <view class='result' style="flex-direction:row;">
+    <!-- <view class='view-avatar'>
+      <image class="avatar" src="/image/{{item.avatar}}.jpg" style='height:150rpx; width:150rpx'></image>
+    </view> -->
+    <image src="{{item.avatar}}" class='img'/>
+    <view class='basic-info' style="flex-direction:column;">
+      <view class="text-view">昵称：{{item.nickname}}</view>
+      <view class='text-view'>
+        <text wx:if="{{item.gender==0}}" class="text">性别：隐藏</text>
+        <text wx:if="{{item.gender==1}}" class="text">性别：男</text>
+        <text wx:if="{{item.gender==2}}" class="text">性别：女</text>
+      </view>
+    </view>    
+    <view class='button'> 
+      <button bindtap="jump_to_others_space" id="{{item.wechatID}}" data-total="{{item.openId}}">详情</button>
+    </view>
+  </view>
+</view>

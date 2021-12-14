@@ -1,0 +1,44 @@
+/* pages/ground/ground.wxss */
+.search{
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  align-items: center;
+  margin-left: 10rpx;
+}
+
+.search-input {
+  width: 560rpx;
+  border-radius: 6px;
+  background-color: rgb(226, 226, 226);
+}
+
+.search-button {
+  margin-left: 10rpx;
+	width: 160rpx;
+	height: 80rpx;
+  border-radius: 12px;
+}
+
+.button{
+  margin-right: 0rpx;
+  margin-top: 25rpx;
+  font-size: 100%;
+}
+
+.scroll {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.result{
+  height: 50rpx
+}
+
+.preview{
+  margin-top: 700rpx
+}
+
+.result_start{
+  margin-bottom: 40rpx
+}

@@ -1,0 +1,59 @@
+<!--pages/me/me.wxml-->
+<view class="avatar">
+  <text bindtap="Avatar" class="hint1">点击此处更换头像：</text>
+  <scroll-view scroll-x style="width:100%; white-space: nowrap;">
+    <view class="imgblock1">
+      <block wx:for="{{avatarlist}}" wx:for-item="image" wx:key="key">
+        <image class="avatar-image" src="{{image}}" data-src="{{image}}" bindtap="ImgPreview" mode="aspectFill"/>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+<view class="person-info">
+  <text class="text">微信号：</text>
+  <textarea maxlength="10"
+    class="wechatnum"
+    placeholder=" 自愿填写"
+    bindblur="bindTextAreaBlur"
+    bindinput="inputw"
+    value="{{wechatId}}"/>
+  <text class="text">昵称：</text>
+  <textarea maxlength="10"
+    class="NickName"
+    placeholder=" 不超过10个字"
+    bindblur="bindTextAreaBlur"
+    bindinput="inputn"
+    value="{{nickname}}"/>
+  <!-- <text wx:if="{{gender==0}}" class="text">性别：未填</text>
+  <text wx:if="{{gender==1}}" class="text">性别：男</text>
+  <text wx:if="{{gender==2}}" class="text">性别：女</text> -->
+  <text class="text">性别:</text>
+  <picker mode="selector" bindchange = "Bindgenderchange" value="{{gender}}" range ="{{genderlist}}">
+    <view class="Pick">{{genderlist[gender]}}</view>
+  </picker>
+</view>
+<!-- <textarea maxlength="10"
+    class="NickName"
+    placeholder="不超过10个字"
+    bindblur="bindTextAreaBlur"
+    value="{{userinfo.nickName}}"/> -->
+<view class="section">
+  <text bindtap="ImgChoose" class="hint">点击此处更换照片墙的照片：</text>
+  <scroll-view scroll-x style="width:100%; white-space: nowrap;">
+    <view class="imgblock">
+      <block wx:for="{{imageList}}" wx:for-item="image" wx:key="key">
+        <image class="added-image" src="{{image}}" data-src="{{image}}" bindtap="ImgPreview" mode="aspectFill"/>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+<textarea maxlength='70'
+    id="intro"
+    class="self-intro"
+    placeholder="写段话介绍一下自己吧"
+    bindblur="bindTextAreaBlur"
+    bindinput="inputi"
+    value="{{intro}}"/>
+<view class="button-area">
+  <button class="button" bindtap='refresh_info'>确认更新</button>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/me/me.wxml-->
+<image src='{{avatar}}' class="avatar"/>
+<view class="person-info">
+  <text class="text">微信号：{{wechatId}}</text>
+  <text class="text">昵称：{{nickname}}</text>
+  <text wx:if="{{gender==0}}" class="text">性别：隐藏</text>
+  <text wx:if="{{gender==1}}" class="text">性别：男</text>
+  <text wx:if="{{gender==2}}" class="text">性别：女</text>
+</view>
+<view class="section">
+  <!-- <text bindtap="ImgChoose" class="hint">照片墙：</text> -->
+  <text class="hint">照片墙：</text>
+  <scroll-view scroll-x style="width:100%; white-space: nowrap;">
+    <view class="imgblock">
+      <block wx:for="{{photo}}" wx:for-item="image" wx:key="key">
+        <image class="added-image" src="{{imgUrl+image}}" data-src="{{image}}" bindtap="ImgPreview" mode="aspectFill"/>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+<view class="section">
+  <text class="hint">简介：</text>
+  <text class="self-intro">{{intro}}</text>
+</view>
+<view class="button-area">
+  <button class="button" bindtap='refresh_info'>编辑</button>
+</view>

@@ -2,16 +2,23 @@ from enum import Enum
 
 class person:
 
-    def __init__(self, userId, nickname=None, gender=None, intro=None, photo=None, avatar=None):
-        self.userId = userId
+    def __init__(self, openId, wechatId=None, nickname=None, gender=None, intro=None, avatar=None, photo=None):
+        self.openId = openId
+        self.wechatId = wechatId
         self.nickname = nickname
         self.gender = gender
         self.intro = intro
-        self.photo = photo
         self.avatar = avatar
+        self.photo = photo
     
-    def getUserId(self):
-        return self.userId
+    def getOpenId(self):
+        return self.openId
+
+    def getWechatId(self):
+        return self.wechatId
+    
+    def setWechatId(self, wechatId):
+        self.wechatId = wechatId
 
     def getNickname(self):
         return self.nickname
@@ -39,6 +46,9 @@ class person:
     
     def getAvatar(self):
         return self.avatar
+    
+    def setAvatar(self, avatar):
+        self.avatar = avatar
 
 
 class site:
@@ -66,6 +76,6 @@ class Message:
     login = '0'
     updatePersonInfo = '1'
     siteSearch = '2'
-    viewSiteInfo = '3'
+    viewSitePersonList = '3'
     viewPersonInfo = '4'
-    matchSearch = '5'
+    viewMatchPersonList = '5'
