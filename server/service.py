@@ -119,8 +119,8 @@ class personService:
         user = "root"
         password = "qz987270"
         database = "KeepFeel"
-        self.appId = "wx8cd42da298970fbf"
-        self.secret = "80913a156b0a5548af015d5e4f00c4e9"
+        self.appId = "************"
+        self.secret = "*********************"
         self.personAccess = infoAccess(host, port, user, password, database)
         self.factory = factory()
         self.image_folder_path = "./user_image"
