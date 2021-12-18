@@ -11,7 +11,7 @@ KeepFeel is a Wechat application aims to connect sports fans with same interesti
 * flask 2.0.2
 
 ### Tips:
-Since the security policy of Wechat App, we cannot make appKey open in github. If you are interesting in our projects, please just contact us. we can put you into  our developers' group and improve this App together.
+For more detail design of KeepFeel, you can see projectFile/KeepFeel.pdf. Since the security policy of Wechat App, we cannot make appKey open in github. If you are interesting in our projects, please just contact us. we can put you into  our developers' group and improve this App together. 
 
 ## demo:
 Here is the current view of KeepFeel.<br>
